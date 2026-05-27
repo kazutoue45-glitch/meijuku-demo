@@ -1,0 +1,294 @@
+---
+const base = import.meta.env.BASE_URL;
+---
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>明塾 Meijuku｜22期生全員合格の個別指導塾（魚津市）</title>
+  <meta name="description" content="富山県魚津市の学習塾「明塾」。22期生全員合格。少人数制・個別指導で、ひとりひとりの「わかる」を「自信」に変えます。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<header class="header">
+  <span class="header__logo">明塾</span>
+  <nav class="header__nav">
+    <a href="#reason">選ばれる理由</a>
+    <a href="#course">料金</a>
+    <a href="#contact">お問い合わせ</a>
+  </nav>
+  <a href="tel:0765-22-0777" class="header__tel">☎ 0765-22-0777</a>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <img src={`${base}/images/hero-bg.png`} alt="" class="hero__bg" />
+  <div class="hero__tint"></div>
+  <div class="hero__content">
+    <p class="hero__label">富山県魚津市の個別指導塾</p>
+    <h1 class="hero__heading"><span class="hero__num">22</span>期生、<br />全員合格。</h1>
+    <p class="hero__sub">少人数制・個別指導だから、「わかる」が「できる」に変わる。</p>
+    <a href="#contact" class="hero__cta">無料体験学習に申し込む</a>
+  </div>
+</section>
+
+<!-- PAIN -->
+<section class="pain">
+  <div class="inner">
+    <h2 class="pain__heading">塾に通わせているのに、<br />成績が上がらない。</h2>
+    <p class="pain__item">大人数の授業で、質問できないまま進む。</p>
+    <p class="pain__item">先生が毎回変わって、子どもが戸惑う。</p>
+    <p class="pain__item">受験が近いのに、何をすればいいかわからない。</p>
+    <p class="pain__bridge">明塾は、22年間この悩みに向き合い続けてきました。</p>
+  </div>
+</section>
+
+<!-- TRANSITION -->
+<div class="wedge"></div>
+
+<!-- REASON -->
+<section class="reason" id="reason">
+  <div class="inner"><p class="en">Reason</p><h2 class="sec-h">明塾が選ばれる理由</h2></div>
+  <div class="reason__block">
+    <div class="reason__img"><img src={`${base}/images/classroom-interior.png`} alt="少人数の教室" loading="lazy" /></div>
+    <div class="reason__body inner">
+      <span class="reason__num">01</span>
+      <h3 class="reason__title">1クラス、最大6人。</h3>
+      <p>大人数の教室では埋もれてしまう「わからない」も、2〜6人なら見逃しません。ひとりひとりの理解度に合わせて、授業の速度も内容も変えます。</p>
+    </div>
+  </div>
+  <div class="reason__block reason__block--flip">
+    <div class="reason__img"><img src={`${base}/images/desk-study.png`} alt="教科書とノート" loading="lazy" /></div>
+    <div class="reason__body inner">
+      <span class="reason__num">02</span>
+      <h3 class="reason__title">塾長が、ずっと見る。</h3>
+      <p>学生バイトに任せません。入塾から卒業まで同じ先生が指導するから、お子さまの小さな変化も見逃さない。</p>
+    </div>
+  </div>
+  <div class="reason__block">
+    <div class="reason__img"><img src={`${base}/images/stationery.png`} alt="学習用文房具" loading="lazy" /></div>
+    <div class="reason__body inner">
+      <span class="reason__num">03</span>
+      <h3 class="reason__title">追加費用、ゼロ。</h3>
+      <p>テスト前の補習も、自主勉の時間も、季節の特別対策も。必要な学習はすべて月額の中。</p>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="results">
+  <div class="inner">
+    <p class="en en--light">Results</p>
+    <div class="results__main"><span class="results__number">22</span><span class="results__unit">期生</span></div>
+    <h2 class="results__statement">高校入試、全員合格。</h2>
+    <p class="results__note">富山東・魚津・新川をはじめ、県内外の志望校へ。</p>
+  </div>
+</section>
+
+<!-- COURSE -->
+<section class="course" id="course">
+  <div class="course__layout">
+    <div class="course__photo">
+      <img src={`${base}/images/desk-study.png`} alt="" loading="lazy" />
+      <div class="course__badge">入塾金<strong>無料</strong></div>
+    </div>
+    <div class="course__data">
+      <p class="en">Course</p>
+      <h2 class="sec-h">コースと料金</h2>
+      <h3 class="course__label">小学生</h3>
+      <div class="course__row"><span>週2回</span><strong>¥12,000<small>/月</small></strong></div>
+      <div class="course__row"><span>週3回</span><strong>¥16,800<small>/月</small></strong></div>
+      <h3 class="course__label">中学1年</h3>
+      <div class="course__row"><span>週2〜3回</span><strong>¥17,500<small>/月</small></strong></div>
+      <h3 class="course__label">中学2年</h3>
+      <div class="course__row"><span>週2〜3回</span><strong>¥20,000<small>/月</small></strong></div>
+      <h3 class="course__label">中学3年</h3>
+      <div class="course__row"><span>週2回〜</span><strong>¥20,000〜<small>/月</small></strong></div>
+      <p class="course__note">教材費は実費（1冊¥1,000〜1,800）。補習・テスト対策の追加費用なし。</p>
+    </div>
+  </div>
+</section>
+
+<!-- TEACHER -->
+<section class="teacher">
+  <div class="inner">
+    <p class="en">Teacher</p>
+    <h2 class="teacher__name">明吉 道雄<span class="teacher__role">明塾 塾長</span></h2>
+    <blockquote class="teacher__quote">
+      勉強を通じて「分かる楽しさ」や「知る喜び」、そして「忍耐」を知ってほしい。<br />
+      それが逆境を乗り切るための「自信」になるから。
+    </blockquote>
+    <p class="teacher__bio">集団指導から個別指導へ。長年の経験を経て明塾を設立。モットーは「目くばり・気くばり」。ひとりひとりの名前と弱点を覚えて、必要な時に必要な声をかける。</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="inner">
+    <p class="en">FAQ</p>
+    <h2 class="sec-h">よくある質問</h2>
+    <div class="faq__item"><p class="faq__q">途中から入塾してもついていけますか？</p><p class="faq__a">個別カリキュラムなので、お子さまの学力に合わせて始められます。月途中は日割り計算です。</p></div>
+    <div class="faq__item"><p class="faq__q">部活と両立できますか？</p><p class="faq__a">学校帰りの直接来塾に対応。回数・時間の変更も柔軟にできます。</p></div>
+    <div class="faq__item"><p class="faq__q">5教科すべて教えてもらえますか？</p><p class="faq__a">英語・数学・理科・社会・国語の全5教科に対応。苦手は重点的に、得意は先取りで進めます。</p></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<footer class="cta" id="contact">
+  <div class="inner">
+    <h2 class="cta__heading">まずは、無料体験から。</h2>
+    <p class="cta__sub">お子さまの「わかる」が始まる場所を、一度のぞいてみてください。</p>
+    <div class="cta__actions">
+      <a href="tel:0765-22-0777" class="cta__tel"><span class="cta__tel-num">0765-22-0777</span><span class="cta__tel-note">午後3時〜10時</span></a>
+      <a href="mailto:meijuku.uozu@gmail.com" class="cta__mail">メールで問い合わせる</a>
+    </div>
+    <address class="cta__addr">〒937-0046 富山県魚津市中央通り2丁目3-21</address>
+    <p class="cta__copy">© 明塾 Meijuku</p>
+  </div>
+</footer>
+
+<div class="sticky"><a href="#contact" class="sticky__btn">無料体験に申し込む</a></div>
+
+</body>
+</html>
+
+<style>
+:root {
+  --primary: #529a88;
+  --primary-dark: #3d7a6a;
+  --bg: #e5e3db;
+  --bg-light: #f0ede7;
+  --white: #fff;
+  --text: #333;
+  --text-soft: #666;
+  --text-muted: #999;
+  --rule: rgba(0,0,0,0.07);
+  --serif: 'Noto Serif JP', serif;
+  --sans: 'Noto Sans JP', sans-serif;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--sans); color: var(--text); line-height: 1.9; letter-spacing: 0.04em; overflow-x: hidden; background: var(--white); padding-bottom: 70px; }
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+.inner { max-width: 920px; margin: 0 auto; padding-left: 1.5rem; padding-right: 1.5rem; }
+.en { font-family: var(--serif); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--primary); margin-bottom: 0.4rem; }
+.en--light { color: rgba(255,255,255,0.4); }
+.sec-h { font-family: var(--serif); font-size: clamp(1.4rem, 3.5vw, 1.8rem); font-weight: 700; color: var(--text); margin-bottom: 2rem; }
+
+/* HEADER (mobile-first) */
+.header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; padding: 0.6rem 1.5rem; background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); }
+.header__logo { font-family: var(--serif); font-size: 1.15rem; font-weight: 900; color: var(--text); }
+.header__nav { display: none; }
+.header__tel { font-family: var(--serif); font-size: 0.8rem; font-weight: 700; color: var(--primary-dark); }
+@media (min-width: 769px) { .header__nav { display: flex; gap: 2rem; } .header__nav a { font-size: 0.8rem; color: var(--text-soft); } }
+
+/* HERO */
+.hero { position: relative; min-height: 100svh; display: flex; align-items: center; overflow: hidden; }
+.hero__bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
+.hero__tint { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(229,227,219,0.5) 0%, rgba(229,227,219,0.25) 50%, rgba(229,227,219,0.1) 100%); }
+.hero__content { position: relative; z-index: 2; padding: calc(3rem + 48px) 1.5rem 3rem; }
+.hero__label { font-size: 0.8rem; font-weight: 700; color: var(--primary-dark); letter-spacing: 0.12em; margin-bottom: 1rem; }
+.hero__heading { font-family: var(--serif); font-size: clamp(2.8rem, 10vw, 5.5rem); font-weight: 900; line-height: 1.15; color: var(--text); margin-bottom: 1.2rem; text-shadow: 0 2px 20px rgba(229,227,219,0.7); }
+.hero__num { font-size: 1.3em; color: var(--primary); }
+.hero__sub { font-size: clamp(0.9rem, 2vw, 1.05rem); line-height: 1.8; color: var(--text-soft); margin-bottom: 2rem; text-shadow: 0 1px 10px rgba(229,227,219,0.8); }
+.hero__cta { display: inline-block; padding: 0.85rem 2rem; background: var(--primary); color: var(--white); font-weight: 700; font-size: 0.9rem; transition: background 0.3s; }
+.hero__cta:hover { background: var(--primary-dark); }
+@media (min-width: 769px) {
+  .hero { align-items: flex-end; }
+  .hero__tint { background: linear-gradient(to right, rgba(229,227,219,0.5) 0%, rgba(229,227,219,0.2) 40%, transparent 65%); }
+  .hero__content { padding: 0 0 clamp(3rem, 8vh, 6rem) clamp(2rem, 5vw, 6rem); max-width: 650px; }
+}
+
+/* PAIN */
+.pain { padding: clamp(3.5rem, 8vw, 6rem) 0; background: var(--bg); text-align: center; }
+.pain__heading { font-family: var(--serif); font-size: clamp(1.3rem, 3.5vw, 1.8rem); font-weight: 700; color: var(--text); line-height: 1.6; margin-bottom: 2rem; }
+.pain__item { font-size: 0.95rem; color: var(--text-soft); padding: 0.7rem 0; max-width: 440px; margin: 0 auto; }
+.pain__bridge { font-family: var(--serif); font-size: clamp(1rem, 2.5vw, 1.2rem); font-weight: 700; color: var(--primary); margin-top: 2rem; }
+
+/* WEDGE */
+.wedge { height: 50px; background: var(--white); clip-path: polygon(0 0, 100% 0, 50% 100%); margin-top: -1px; }
+
+/* REASON */
+.reason { padding: clamp(2rem, 5vw, 4rem) 0 0; }
+.reason__block { display: grid; grid-template-columns: 1fr; margin-bottom: 1px; }
+.reason__img { overflow: hidden; height: 240px; }
+.reason__img img { width: 100%; height: 100%; object-fit: cover; }
+.reason__body { padding: 2rem 1.5rem; }
+.reason__num { font-family: var(--serif); font-size: 3.5rem; font-weight: 900; color: var(--primary); opacity: 0.15; line-height: 1; }
+.reason__title { font-family: var(--serif); font-size: clamp(1.2rem, 2.8vw, 1.5rem); font-weight: 700; color: var(--text); margin: 0.3rem 0 0.8rem; line-height: 1.4; }
+.reason__body p { font-size: 0.9rem; color: var(--text-soft); line-height: 1.9; }
+@media (min-width: 769px) {
+  .reason__block { grid-template-columns: 1fr 1fr; min-height: 380px; }
+  .reason__block--flip .reason__img { order: 2; }
+  .reason__block--flip .reason__body { order: 1; }
+  .reason__img { height: auto; }
+  .reason__body { padding: 3rem 2.5rem; display: flex; flex-direction: column; justify-content: center; }
+}
+
+/* RESULTS */
+.results { padding: clamp(4rem, 10vw, 7rem) 0; background: var(--primary-dark); color: var(--white); text-align: center; }
+.results__main { display: flex; align-items: baseline; justify-content: center; gap: 0.2rem; margin-bottom: 0.3rem; }
+.results__number { font-family: var(--serif); font-size: clamp(5rem, 18vw, 11rem); font-weight: 900; line-height: 1; color: var(--bg); }
+.results__unit { font-family: var(--serif); font-size: clamp(1.3rem, 3.5vw, 2rem); font-weight: 700; }
+.results__statement { font-family: var(--serif); font-size: clamp(1.2rem, 3vw, 1.7rem); font-weight: 700; margin-bottom: 0.8rem; }
+.results__note { font-size: 0.85rem; opacity: 0.5; }
+
+/* COURSE */
+.course { background: var(--bg-light); }
+.course__layout { display: grid; grid-template-columns: 1fr; }
+.course__photo { position: relative; overflow: hidden; height: 200px; }
+.course__photo img { width: 100%; height: 100%; object-fit: cover; }
+.course__badge { position: absolute; bottom: 1rem; left: 1rem; z-index: 2; font-family: var(--serif); font-size: 1rem; color: var(--white); background: var(--primary-dark); padding: 0.6rem 1rem; line-height: 1.3; }
+.course__badge strong { font-size: 2rem; display: block; }
+.course__data { padding: clamp(1.5rem, 4vw, 2.5rem) 1.5rem; }
+.course__label { font-family: var(--serif); font-size: 0.95rem; font-weight: 700; color: var(--text); margin: 1.2rem 0 0.2rem; }
+.course__label:first-of-type { margin-top: 0; }
+.course__row { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; padding: 0.5rem 0; border-bottom: 1px solid var(--rule); }
+.course__row strong { font-family: var(--serif); font-size: 1.1rem; color: var(--text); }
+.course__row small { font-size: 0.65em; color: var(--text-muted); font-weight: 400; }
+.course__note { margin-top: 1.2rem; font-size: 0.8rem; color: var(--text-muted); }
+@media (min-width: 769px) {
+  .course__layout { grid-template-columns: 2fr 3fr; }
+  .course__photo { height: auto; min-height: 460px; }
+  .course__data { padding: 2.5rem; }
+}
+
+/* TEACHER */
+.teacher { padding: clamp(3.5rem, 8vw, 6rem) 0; background: var(--white); }
+.teacher__name { font-family: var(--serif); font-size: 1.6rem; font-weight: 900; color: var(--text); margin-top: 0.4rem; }
+.teacher__role { font-size: 0.8rem; font-weight: 400; color: var(--text-muted); margin-left: 1rem; }
+.teacher__quote { font-family: var(--serif); font-size: 0.95rem; line-height: 2.1; color: var(--text); padding: 1.2rem 0; margin: 1.2rem 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); font-style: normal; border-left: none; }
+.teacher__bio { font-size: 0.85rem; color: var(--text-soft); line-height: 1.9; }
+
+/* FAQ */
+.faq { padding: clamp(3.5rem, 8vw, 6rem) 0; background: var(--bg-light); }
+.faq__item { padding: 1.2rem 0; border-bottom: 1px solid var(--rule); }
+.faq__q { font-family: var(--serif); font-size: 0.95rem; font-weight: 700; color: var(--text); margin-bottom: 0.4rem; }
+.faq__q::before { content: 'Q. '; color: var(--primary); }
+.faq__a { font-size: 0.9rem; color: var(--text-soft); padding-left: 1.6rem; position: relative; }
+.faq__a::before { content: 'A.'; position: absolute; left: 0; font-weight: 700; color: var(--text); }
+
+/* CTA */
+.cta { padding: clamp(3.5rem, 8vw, 6rem) 0 2.5rem; background: var(--primary-dark); color: var(--white); text-align: center; font-style: normal; }
+.cta__heading { font-family: var(--serif); font-size: clamp(1.3rem, 3.5vw, 1.8rem); font-weight: 700; margin-bottom: 0.6rem; }
+.cta__sub { font-size: 0.9rem; opacity: 0.7; margin-bottom: 2rem; }
+.cta__actions { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-bottom: 2.5rem; }
+.cta__tel { display: flex; flex-direction: column; align-items: center; padding: 0.8rem 1.8rem; background: rgba(255,255,255,0.08); transition: background 0.3s; }
+.cta__tel:hover { background: rgba(255,255,255,0.15); }
+.cta__tel-num { font-family: var(--serif); font-size: 1.3rem; font-weight: 700; }
+.cta__tel-note { font-size: 0.7rem; opacity: 0.6; }
+.cta__mail { display: inline-block; padding: 0.8rem 2rem; background: var(--bg); color: var(--text); font-weight: 700; font-size: 0.9rem; transition: background 0.3s; }
+.cta__mail:hover { background: var(--bg-light); }
+.cta__addr { font-size: 0.75rem; opacity: 0.5; font-style: normal; margin-bottom: 0.3rem; }
+.cta__copy { font-size: 0.7rem; opacity: 0.25; }
+
+/* STICKY */
+.sticky { position: fixed; bottom: 0; left: 0; right: 0; z-index: 90; padding: 0.5rem 1rem; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border-top: 1px solid var(--rule); }
+.sticky__btn { display: block; text-align: center; padding: 0.8rem; background: var(--primary); color: var(--white); font-weight: 700; font-size: 0.85rem; }
+@media (min-width: 769px) { .sticky { display: none; } }
+</style>
