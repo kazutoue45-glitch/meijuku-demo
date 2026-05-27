@@ -5,136 +5,140 @@ const base = import.meta.env.BASE_URL;
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>明塾 Meijuku｜22期生全員合格の個別指導塾（魚津市）</title>
+  <title>明塾 Meijuku｜魚津市の学習塾</title>
   <meta name="description" content="魚津市の学習塾 少人数制・個別対応…だから「わかる」「できる」 個別カリキュラム作成で「わかる」 多くの学習機会で「できる」までサポート" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@700;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@500;700;900&display=swap" rel="stylesheet" />
 </head>
 <body>
 
 <header class="header">
   <span class="header__logo">明塾 <small>Meijuku</small></span>
   <nav class="header__nav">
-    <a href="#reason">選ばれる理由</a>
+    <a href="#about">明塾について</a>
     <a href="#course">コース</a>
+    <a href="#news">お知らせ</a>
     <a href="#contact">お問い合わせ</a>
   </nav>
   <a href="tel:0765-22-0777" class="header__tel">☎ 0765-22-0777</a>
 </header>
 
-<!-- HERO: フルブリード写真＋大型テキストオーバーレイ＋マスコットフローティング -->
-<section class="hero">
-  <img src={`${base}/images/hero-bg.png`} alt="" class="hero__bg" />
-  <div class="hero__tint"></div>
-  <div class="hero__content">
-    <p class="hero__label">魚津市の学習塾 明塾 Meijuku</p>
-    <h1 class="hero__heading">全員合格。</h1>
-    <p class="hero__sub">少人数制・個別指導…だから「わかる」「できる」<br />個別カリキュラム作成で「わかる」<br />多くの学習機会で「できる」までサポート</p>
-    <div class="hero__actions">
-      <a href="#contact" class="hero__cta">無料体験学習に申し込む</a>
-      <p class="hero__note">入塾金無料</p>
+<!-- ===== FV ===== -->
+<section class="fv">
+  <img src={`${base}/images/hero-bg.png`} alt="" class="fv__bg" />
+  <div class="fv__content">
+    <h1 class="fv__title">明塾<span class="fv__title-en">Meijuku</span></h1>
+    <div class="fv__desc">
+      <p>富山県魚津市の学習塾</p>
+      <p>少人数制・個別指導…</p>
+      <p>だから「わかる」「できる」</p>
+      <p>個別カリキュラム作成で「わかる」</p>
+      <p>多くの学習機会で「できる」までサポート</p>
     </div>
   </div>
-  <img src={`${base}/images/mascot.png`} alt="" class="hero__mascot" />
+  <img src={`${base}/images/mascot.png`} alt="明塾マスコット" class="fv__mascot" />
 </section>
 
-<!-- PHILOSOPHY -->
-<section class="philosophy">
+<!-- ===== キャッチ＋お知らせ ===== -->
+<section class="catch">
   <div class="inner">
-    <h2 class="philosophy__heading">ひとりひとりを大切に。</h2>
-    <p class="philosophy__text">「目くばり」「気くばり」をモットーに、勉強を通じて「分かる楽しさ」や「知る喜び」そして「忍耐」を知り、それを逆境を乗り切るための「自信」としてもらいたい。</p>
-    <p class="philosophy__text">自ら責任指導・継続指導。お子さまの成長を、入塾から卒業まで同じ先生が見届けます。</p>
+    <h2 class="catch__heading">少人数制・個別指導… だから「わかる」「できる」</h2>
+    <div class="catch__grid">
+      <div>
+        <p class="catch__announce">新入塾生受付中</p>
+        <p class="catch__announce">入塾金無料・無料体験学習</p>
+        <p class="catch__result">22期生　みんながんばりました。<strong>高校入試全員合格</strong></p>
+      </div>
+      <div class="catch__links">
+        <a href="#course" class="catch__link">中学生コース →</a>
+        <a href="#course" class="catch__link">小学生コース →</a>
+      </div>
+    </div>
   </div>
 </section>
 
-<div class="wedge"></div>
-
-<!-- REASON -->
-<section class="reason" id="reason">
+<!-- ===== 明塾について ===== -->
+<section class="about" id="about">
   <div class="inner">
-    <p class="en">Reason</p>
-    <h2 class="sec-h">明塾が選ばれる理由</h2>
-  </div>
-  <div class="reason__block">
-    <div class="reason__img"><img src={`${base}/images/classroom-interior.png`} alt="少人数の教室" loading="lazy" /></div>
-    <div class="reason__body inner">
-      <span class="reason__num">01</span>
-      <h3 class="reason__title">1クラス、最大6人。</h3>
-      <p>少人数制だから、ひとりひとりの理解度に合わせて授業の速度も内容も変えます。大人数では埋もれる「わからない」を見逃しません。</p>
-    </div>
-  </div>
-  <div class="reason__block reason__block--flip">
-    <div class="reason__img"><img src={`${base}/images/desk-study.png`} alt="教科書とノート" loading="lazy" /></div>
-    <div class="reason__body inner">
-      <span class="reason__num">02</span>
-      <h3 class="reason__title">塾長が、ずっと見る。</h3>
-      <p>学生バイトに任せません。入塾から卒業まで同じ先生が継続指導するから、お子さまの小さな変化も見逃さない。</p>
-    </div>
-  </div>
-  <div class="reason__block">
-    <div class="reason__img"><img src={`${base}/images/stationery.png`} alt="学習用文房具" loading="lazy" /></div>
-    <div class="reason__body inner">
-      <span class="reason__num">03</span>
-      <h3 class="reason__title">追加費用、ゼロ。</h3>
-      <p>テスト前の補習も、自主勉の時間も、季節の特別対策も。多くの学習機会で「できる」までサポート。すべて月額の中です。</p>
+    <h2 class="sec-h">ひとりひとりを大切に。</h2>
+    <div class="about__grid">
+      <div class="about__block">
+        <h3>「分かる」そして「できる」</h3>
+        <p>「目くばり」「気くばり」をモットーに、勉強を通じて「分かる楽しさ」や「知る喜び」そして「忍耐」を知り、それを逆境を乗り切るための「自信」としてもらいたいと考えています。</p>
+      </div>
+      <div class="about__block">
+        <h3>自ら責任指導・継続指導</h3>
+        <p>短期学生バイトに任せません。お子さまの入塾から卒業まで、同じ先生が責任を持って継続指導します。ひとりひとりの名前と弱点を覚えて、必要な時に必要な声をかけます。</p>
+      </div>
+      <div class="about__block">
+        <h3>多くの学習機会で万全サポート</h3>
+        <p>テスト対策、季節講習、補習授業、自主勉強時間、英検・漢検・数検対策。月額の中で多くの学習機会を提供し、「できる」までサポートします。追加費用はかかりません。</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- RESULTS -->
-<section class="results">
-  <div class="inner">
-    <div class="results__main">
-      <span class="results__number">22</span>
-      <span class="results__unit">期生</span>
-    </div>
-    <h2 class="results__statement">高校入試、全員合格。</h2>
-    <p class="results__note">富山東・魚津・新川をはじめ、県内外の志望校へ。</p>
-  </div>
-</section>
-
-<!-- COURSE -->
+<!-- ===== コース ===== -->
 <section class="course" id="course">
   <div class="course__layout">
-    <div class="course__photo">
-      <img src={`${base}/images/desk-study.png`} alt="" loading="lazy" />
-      <div class="course__badge">入塾金<strong>無料</strong></div>
+    <div class="course__img">
+      <img src={`${base}/images/classroom-interior.png`} alt="教室内装" loading="lazy" />
     </div>
     <div class="course__data">
-      <p class="en">Course</p>
       <h2 class="sec-h">コースと料金</h2>
-      <h3 class="course__label">小学生</h3>
-      <div class="course__row"><span>週2回</span><strong>¥12,000<small>/月</small></strong></div>
+
+      <h3 class="course__label">小学生コース</h3>
+      <p class="course__desc">読み・書き・計算の基礎学力を反復学習で定着。お子さまの学力・性格に合わせ無理なく楽しく進めます。</p>
+      <div class="course__row"><span>週2回（各1時間＋延長可）</span><strong>¥12,000<small>/月</small></strong></div>
       <div class="course__row"><span>週3回</span><strong>¥16,800<small>/月</small></strong></div>
+
       <h3 class="course__label">中学1年</h3>
-      <div class="course__row"><span>週2〜3回</span><strong>¥17,500<small>/月</small></strong></div>
+      <div class="course__row"><span>週2〜3回（2〜3時間）</span><strong>¥17,500<small>/月</small></strong></div>
+
       <h3 class="course__label">中学2年</h3>
-      <div class="course__row"><span>週2〜3回</span><strong>¥20,000<small>/月</small></strong></div>
+      <div class="course__row"><span>週2〜3回（2〜3時間）</span><strong>¥20,000<small>/月</small></strong></div>
+
       <h3 class="course__label">中学3年</h3>
-      <div class="course__row"><span>週2回〜</span><strong>¥20,000〜<small>/月</small></strong></div>
-      <p class="course__note">教材費は実費（1冊¥1,000〜1,800）。補習・テスト対策の追加費用なし。</p>
+      <div class="course__row"><span>1学期 週2〜3回</span><strong>¥20,000<small>/月</small></strong></div>
+      <div class="course__row"><span>2〜3学期 週3〜5回</span><strong>¥29,000<small>/月</small></strong></div>
+
+      <div class="course__note-box">
+        <p><strong>入塾金：無料</strong></p>
+        <p>教材費は実費（1冊¥1,000〜1,800）。補習・テスト対策の追加費用なし。兄弟姉妹割引あり。</p>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- TEACHER -->
-<section class="teacher">
+<!-- ===== お知らせ（記事一覧） ===== -->
+<section class="news" id="news">
   <div class="inner">
-    <p class="en">Teacher</p>
-    <h2 class="teacher__name">明吉 道雄<span class="teacher__role">明塾 塾長</span></h2>
-    <blockquote class="teacher__quote">
-      勉強を通じて「分かる楽しさ」や「知る喜び」、そして「忍耐」を知ってほしい。<br />
-      それが逆境を乗り切るための「自信」になるから。
-    </blockquote>
-    <p class="teacher__bio">集団指導から個別指導へ。長年の経験を経て明塾を設立。モットーは「目くばり・気くばり」。ひとりひとりの名前と弱点を覚えて、必要な時に必要な声をかける。</p>
+    <h2 class="sec-h">お知らせ</h2>
+    <div class="news__list">
+      <a class="news__item" href="#">
+        <time>2026.03.01</time>
+        <span>2026 春期講習　少人数制,個別指導…だから「わかる」「できる」</span>
+      </a>
+      <a class="news__item" href="#">
+        <time>2026.02.17</time>
+        <span>中1・2 期末テスト対策 実施中</span>
+      </a>
+      <a class="news__item" href="#">
+        <time>2026.01.10</time>
+        <span>中3 直前の高校入試対策</span>
+      </a>
+      <a class="news__item" href="#">
+        <time>2025.07.01</time>
+        <span>中間テスト対策 実施中</span>
+      </a>
+    </div>
   </div>
 </section>
 
-<!-- FAQ -->
+<!-- ===== FAQ ===== -->
 <section class="faq">
   <div class="inner">
-    <p class="en">FAQ</p>
     <h2 class="sec-h">よくある質問</h2>
     <div class="faq__item"><p class="faq__q">途中から入塾してもついていけますか？</p><p class="faq__a">個別カリキュラムなので、お子さまの学力に合わせて始められます。月途中は日割り計算です。</p></div>
     <div class="faq__item"><p class="faq__q">部活と両立できますか？</p><p class="faq__a">学校帰りの直接来塾に対応。回数・時間の変更も柔軟にできます。</p></div>
@@ -142,12 +146,12 @@ const base = import.meta.env.BASE_URL;
   </div>
 </section>
 
-<!-- CTA -->
+<!-- ===== CTA ===== -->
 <footer class="cta" id="contact">
   <div class="inner">
     <img src={`${base}/images/mascot.png`} alt="" class="cta__mascot" />
-    <h2 class="cta__heading">まずは、無料体験から。</h2>
-    <p class="cta__sub">お子さまの「わかる」が始まる場所を、一度のぞいてみてください。</p>
+    <h2 class="cta__heading">無料体験学習 受付中</h2>
+    <p class="cta__sub">お気軽にお問い合わせください。</p>
     <div class="cta__actions">
       <a href="tel:0765-22-0777" class="cta__tel"><span class="cta__tel-num">0765-22-0777</span><span class="cta__tel-note">午後3時〜10時</span></a>
       <a href="mailto:meijuku.uozu@gmail.com" class="cta__mail">メールで問い合わせる</a>
@@ -165,13 +169,13 @@ const base = import.meta.env.BASE_URL;
 <style>
 :root {
   --azuki: #745a6a;
-  --azuki-dark: #6e5364;
+  --azuki-light: #8a7080;
   --bg: #e5e3db;
   --bg-light: #edebe5;
   --white: #fff;
   --text: #3a3a3a;
   --text-soft: #5a5a5a;
-  --text-muted: #8a8a8a;
+  --text-muted: #999;
   --rule: rgba(0,0,0,0.08);
   --serif: 'Noto Serif JP', serif;
   --sans: 'Noto Sans JP', sans-serif;
@@ -183,171 +187,157 @@ body { font-family: var(--sans); color: var(--text); line-height: 1.9; letter-sp
 img { max-width: 100%; height: auto; display: block; }
 a { color: inherit; text-decoration: none; }
 .inner { max-width: 880px; margin: 0 auto; padding-left: 1.5rem; padding-right: 1.5rem; }
-.en { font-family: var(--serif); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--azuki); margin-bottom: 0.3rem; opacity: 0.6; }
-.sec-h { font-family: var(--serif); font-size: clamp(1.3rem, 3.5vw, 1.7rem); font-weight: 700; color: var(--text); margin-bottom: 2rem; }
+.sec-h { font-family: var(--serif); font-size: clamp(1.3rem, 3.5vw, 1.7rem); font-weight: 700; color: var(--text); margin-bottom: 1.5rem; }
 
 /* HEADER */
-.header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; padding: 0.55rem 1.5rem; background: rgba(229,227,219,0.95); backdrop-filter: blur(10px); }
+.header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; padding: 0.5rem 1.5rem; background: rgba(229,227,219,0.95); backdrop-filter: blur(10px); }
 .header__logo { font-family: var(--serif); font-size: 1.1rem; font-weight: 900; color: var(--text); }
-.header__logo small { font-weight: 500; font-size: 0.65em; color: var(--text-muted); margin-left: 0.2em; }
+.header__logo small { font-weight: 500; font-size: 0.6em; color: var(--text-muted); margin-left: 0.2em; }
 .header__nav { display: none; }
-.header__tel { font-family: var(--serif); font-size: 0.8rem; font-weight: 700; color: var(--azuki); }
-@media (min-width: 769px) { .header__nav { display: flex; gap: 1.8rem; } .header__nav a { font-size: 0.78rem; color: var(--text-soft); } }
+.header__tel { font-family: var(--serif); font-size: 0.78rem; font-weight: 700; color: var(--azuki); }
+@media (min-width: 769px) { .header__nav { display: flex; gap: 1.5rem; } .header__nav a { font-size: 0.78rem; color: var(--text-soft); } }
 
-/* HERO: フルブリード写真＋大型テキスト＋マスコットフローティング */
-.hero {
-  position: relative;
-  min-height: 100svh;
-  display: flex; align-items: center;
-  overflow: hidden;
+/* FV: 元サイトと同じ左overlay＋右写真を再現しつつ品質を上げる */
+.fv {
+  display: grid; grid-template-columns: 1fr;
   margin-top: 44px;
+  position: relative;
 }
-.hero__bg {
-  position: absolute; inset: 0;
-  width: 100%; height: 100%;
+.fv__bg {
+  width: 100%; height: 300px;
   object-fit: cover; object-position: center 40%;
 }
-.hero__tint {
-  position: absolute; inset: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(116,90,106,0.7) 0%,
-    rgba(116,90,106,0.35) 40%,
-    transparent 70%
-  );
-}
-.hero__content {
-  position: relative; z-index: 2;
-  padding: 2rem 1.5rem;
-  max-width: 680px;
-}
-.hero__label {
-  font-size: 0.8rem; font-weight: 700;
-  color: var(--white); opacity: 0.7;
-  letter-spacing: 0.1em;
-  margin-bottom: 1rem;
-}
-.hero__heading {
-  font-family: var(--serif);
-  font-size: clamp(3.5rem, 12vw, 7rem);
-  font-weight: 900; line-height: 1.05;
+.fv__content {
+  background: var(--azuki);
   color: var(--white);
-  margin-bottom: 1rem;
+  padding: 2rem 1.5rem;
 }
-.hero__sub {
-  font-size: clamp(0.82rem, 1.8vw, 0.95rem);
-  line-height: 1.9; color: rgba(255,255,255,0.8);
-  margin-bottom: 2rem;
+.fv__title {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
 }
-.hero__actions { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
-.hero__cta {
-  display: inline-block; padding: 0.85rem 2rem;
-  background: var(--white); color: var(--azuki);
-  font-weight: 700; font-size: 0.88rem;
-  transition: background 0.3s, color 0.3s;
+.fv__title-en {
+  display: block;
+  font-size: 0.4em;
+  font-weight: 500;
+  opacity: 0.6;
+  margin-top: 0.3rem;
+  letter-spacing: 0.15em;
 }
-.hero__cta:hover { background: var(--bg); }
-.hero__note { font-size: 0.75rem; color: rgba(255,255,255,0.6); font-weight: 700; }
-.hero__mascot {
+.fv__desc p {
+  font-size: 0.85rem;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+.fv__mascot {
   position: absolute;
-  right: 5%; bottom: 8%;
-  width: clamp(100px, 15vw, 180px);
-  z-index: 3;
-  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15));
+  width: 100px;
+  right: 1rem; bottom: -50px;
+  z-index: 5;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.1));
 }
 
-@media (max-width: 768px) {
-  .hero__tint {
-    background: linear-gradient(
-      to bottom,
-      rgba(116,90,106,0.75) 0%,
-      rgba(116,90,106,0.4) 50%,
-      rgba(116,90,106,0.15) 100%
-    );
-  }
-  .hero__mascot { right: 3%; bottom: 3%; width: 90px; }
-}
-
-/* PHILOSOPHY */
-.philosophy { padding: clamp(2.5rem, 6vw, 4rem) 0; background: var(--white); text-align: center; }
-.philosophy__heading { font-family: var(--serif); font-size: clamp(1.3rem, 3.5vw, 1.8rem); font-weight: 700; color: var(--azuki); margin-bottom: 1.5rem; }
-.philosophy__text { max-width: 600px; margin: 0 auto 1rem; font-size: 0.9rem; color: var(--text-soft); line-height: 2; }
-
-/* WEDGE */
-.wedge { height: 40px; background: var(--bg); clip-path: polygon(0 0, 100% 0, 50% 100%); }
-
-/* REASON */
-.reason { padding: clamp(2rem, 5vw, 3.5rem) 0 0; background: var(--bg); }
-.reason__block { display: grid; grid-template-columns: 1fr; margin-bottom: 2px; background: var(--white); }
-.reason__img { overflow: hidden; height: 220px; }
-.reason__img img { width: 100%; height: 100%; object-fit: cover; }
-.reason__body { padding: 1.8rem 1.5rem; }
-.reason__num { font-family: var(--serif); font-size: 3rem; font-weight: 900; color: var(--azuki); opacity: 0.12; line-height: 1; }
-.reason__title { font-family: var(--serif); font-size: clamp(1.1rem, 2.5vw, 1.4rem); font-weight: 700; color: var(--text); margin: 0.3rem 0 0.7rem; line-height: 1.4; }
-.reason__body p { font-size: 0.88rem; color: var(--text-soft); line-height: 1.9; }
 @media (min-width: 769px) {
-  .reason__block { grid-template-columns: 1fr 1fr; min-height: 340px; }
-  .reason__block--flip .reason__img { order: 2; }
-  .reason__block--flip .reason__body { order: 1; }
-  .reason__img { height: auto; }
-  .reason__body { padding: 2.5rem; display: flex; flex-direction: column; justify-content: center; }
+  .fv { grid-template-columns: 40% 60%; min-height: 480px; }
+  .fv__bg { height: auto; order: 2; }
+  .fv__content { order: 1; padding: 3rem 2.5rem; display: flex; flex-direction: column; justify-content: center; }
+  .fv__title { font-size: 2.8rem; }
+  .fv__desc p { font-size: 0.92rem; }
+  .fv__mascot { width: 140px; right: 2rem; bottom: 2rem; }
 }
 
-/* RESULTS */
-.results { padding: clamp(3.5rem, 8vw, 6rem) 0; background: var(--azuki); color: var(--white); text-align: center; }
-.results__main { display: flex; align-items: baseline; justify-content: center; gap: 0.2rem; margin-bottom: 0.3rem; }
-.results__number { font-family: var(--serif); font-size: clamp(5rem, 16vw, 10rem); font-weight: 900; line-height: 1; color: var(--bg); }
-.results__unit { font-family: var(--serif); font-size: clamp(1.2rem, 3vw, 1.8rem); font-weight: 700; }
-.results__statement { font-family: var(--serif); font-size: clamp(1.1rem, 3vw, 1.5rem); font-weight: 700; margin-bottom: 0.8rem; }
-.results__note { font-size: 0.82rem; opacity: 0.5; }
+/* CATCH */
+.catch {
+  padding: clamp(3rem, 6vw, 4.5rem) 0;
+  background: var(--bg);
+  position: relative;
+  z-index: 1;
+}
+.catch__heading {
+  font-family: var(--serif);
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid var(--azuki);
+}
+.catch__grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+.catch__announce { font-family: var(--serif); font-size: 1rem; font-weight: 700; color: var(--azuki); margin-bottom: 0.2rem; }
+.catch__result { margin-top: 1rem; font-size: 0.9rem; color: var(--text-soft); }
+.catch__result strong { font-family: var(--serif); font-size: 1.2rem; color: var(--text); display: block; margin-top: 0.2rem; }
+.catch__links { display: flex; flex-direction: column; gap: 0.5rem; }
+.catch__link {
+  display: block; padding: 0.8rem 1.2rem;
+  background: var(--azuki); color: var(--white);
+  font-weight: 700; font-size: 0.88rem;
+  transition: background 0.3s;
+}
+.catch__link:hover { background: var(--azuki-light); }
+@media (min-width: 769px) { .catch__grid { grid-template-columns: 1fr auto; align-items: end; } }
+
+/* ABOUT */
+.about { padding: clamp(3rem, 6vw, 4.5rem) 0; background: var(--white); }
+.about__grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
+.about__block h3 { font-family: var(--serif); font-size: 1.05rem; font-weight: 700; color: var(--azuki); margin-bottom: 0.5rem; }
+.about__block p { font-size: 0.88rem; color: var(--text-soft); line-height: 1.9; }
+@media (min-width: 769px) { .about__grid { grid-template-columns: 1fr 1fr 1fr; } }
 
 /* COURSE */
-.course { background: var(--white); }
+.course { background: var(--bg-light); }
 .course__layout { display: grid; grid-template-columns: 1fr; }
-.course__photo { position: relative; overflow: hidden; height: 180px; }
-.course__photo img { width: 100%; height: 100%; object-fit: cover; }
-.course__badge { position: absolute; bottom: 1rem; left: 1rem; z-index: 2; font-family: var(--serif); font-size: 0.9rem; color: var(--white); background: var(--azuki); padding: 0.5rem 0.8rem; line-height: 1.3; }
-.course__badge strong { font-size: 1.8rem; display: block; }
+.course__img { overflow: hidden; height: 200px; }
+.course__img img { width: 100%; height: 100%; object-fit: cover; }
 .course__data { padding: clamp(1.5rem, 4vw, 2.5rem) 1.5rem; }
-.course__label { font-family: var(--serif); font-size: 0.9rem; font-weight: 700; color: var(--text); margin: 1rem 0 0.2rem; }
+.course__label { font-family: var(--serif); font-size: 0.95rem; font-weight: 700; color: var(--text); margin: 1.2rem 0 0.3rem; }
 .course__label:first-of-type { margin-top: 0; }
-.course__row { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; padding: 0.4rem 0; border-bottom: 1px solid var(--rule); font-size: 0.9rem; }
+.course__desc { font-size: 0.82rem; color: var(--text-soft); margin-bottom: 0.5rem; }
+.course__row { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; padding: 0.4rem 0; border-bottom: 1px solid var(--rule); font-size: 0.88rem; }
 .course__row strong { font-family: var(--serif); font-size: 1.05rem; color: var(--text); }
 .course__row small { font-size: 0.6em; color: var(--text-muted); font-weight: 400; }
-.course__note { margin-top: 1rem; font-size: 0.78rem; color: var(--text-muted); }
+.course__note-box { margin-top: 1.5rem; padding: 1rem; background: var(--white); font-size: 0.82rem; color: var(--text-soft); }
+.course__note-box strong { color: var(--azuki); }
 @media (min-width: 769px) {
   .course__layout { grid-template-columns: 2fr 3fr; }
-  .course__photo { height: auto; min-height: 420px; }
+  .course__img { height: auto; min-height: 500px; }
   .course__data { padding: 2.5rem; }
 }
 
-/* TEACHER */
-.teacher { padding: clamp(3rem, 7vw, 5rem) 0; background: var(--bg); }
-.teacher__name { font-family: var(--serif); font-size: 1.5rem; font-weight: 900; color: var(--text); margin-top: 0.3rem; }
-.teacher__role { font-size: 0.75rem; font-weight: 400; color: var(--text-muted); margin-left: 0.8rem; }
-.teacher__quote { font-family: var(--serif); font-size: 0.92rem; line-height: 2.1; color: var(--text); padding: 1.2rem 0; margin: 1rem 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); font-style: normal; border-left: none; }
-.teacher__bio { font-size: 0.85rem; color: var(--text-soft); line-height: 1.9; }
+/* NEWS */
+.news { padding: clamp(3rem, 6vw, 4.5rem) 0; background: var(--white); }
+.news__list { display: flex; flex-direction: column; }
+.news__item {
+  display: flex; gap: 1rem; align-items: baseline;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--rule);
+  transition: color 0.2s;
+}
+.news__item:hover { color: var(--azuki); }
+.news__item time { font-size: 0.78rem; color: var(--text-muted); white-space: nowrap; min-width: 80px; }
+.news__item span { font-size: 0.88rem; }
 
 /* FAQ */
-.faq { padding: clamp(3rem, 7vw, 5rem) 0; background: var(--white); }
-.faq__item { padding: 1.1rem 0; border-bottom: 1px solid var(--rule); }
+.faq { padding: clamp(3rem, 6vw, 4.5rem) 0; background: var(--bg-light); }
+.faq__item { padding: 1rem 0; border-bottom: 1px solid var(--rule); }
 .faq__q { font-family: var(--serif); font-size: 0.92rem; font-weight: 700; color: var(--text); margin-bottom: 0.3rem; }
 .faq__q::before { content: 'Q. '; color: var(--azuki); }
-.faq__a { font-size: 0.88rem; color: var(--text-soft); padding-left: 1.5rem; position: relative; }
+.faq__a { font-size: 0.85rem; color: var(--text-soft); padding-left: 1.5rem; position: relative; }
 .faq__a::before { content: 'A.'; position: absolute; left: 0; font-weight: 700; color: var(--text); }
 
 /* CTA */
-.cta { padding: clamp(3rem, 7vw, 5rem) 0 2rem; background: var(--azuki); color: var(--white); text-align: center; font-style: normal; }
-.cta__mascot { width: 100px; margin: 0 auto 1.5rem; }
-.cta__heading { font-family: var(--serif); font-size: clamp(1.2rem, 3.5vw, 1.6rem); font-weight: 700; margin-bottom: 0.5rem; }
-.cta__sub { font-size: 0.88rem; opacity: 0.7; margin-bottom: 2rem; }
+.cta { padding: clamp(3rem, 6vw, 4.5rem) 0 2rem; background: var(--azuki); color: var(--white); text-align: center; font-style: normal; }
+.cta__mascot { width: 90px; margin: 0 auto 1rem; }
+.cta__heading { font-family: var(--serif); font-size: clamp(1.2rem, 3vw, 1.5rem); font-weight: 700; margin-bottom: 0.4rem; }
+.cta__sub { font-size: 0.85rem; opacity: 0.7; margin-bottom: 1.5rem; }
 .cta__actions { display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: center; margin-bottom: 2rem; }
 .cta__tel { display: flex; flex-direction: column; align-items: center; padding: 0.7rem 1.5rem; background: rgba(255,255,255,0.1); transition: background 0.3s; }
 .cta__tel:hover { background: rgba(255,255,255,0.18); }
 .cta__tel-num { font-family: var(--serif); font-size: 1.2rem; font-weight: 700; }
 .cta__tel-note { font-size: 0.68rem; opacity: 0.6; }
-.cta__mail { display: inline-block; padding: 0.7rem 1.8rem; background: var(--bg); color: var(--text); font-weight: 700; font-size: 0.85rem; transition: background 0.3s; }
-.cta__mail:hover { background: var(--bg-light); }
+.cta__mail { padding: 0.7rem 1.8rem; background: var(--bg); color: var(--text); font-weight: 700; font-size: 0.85rem; }
 .cta__addr { font-size: 0.72rem; opacity: 0.45; font-style: normal; margin-bottom: 0.3rem; }
 .cta__copy { font-size: 0.65rem; opacity: 0.2; }
 
