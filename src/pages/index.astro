@@ -6,7 +6,7 @@ const base = import.meta.env.BASE_URL;
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>明塾 Meijuku｜22期生全員合格の個別指導塾（魚津市）</title>
-  <meta name="description" content="富山県魚津市の学習塾「明塾」。22期生全員合格。少人数制・個別指導で、ひとりひとりの「わかる」を「自信」に変えます。" />
+  <meta name="description" content="魚津市の学習塾 少人数制・個別対応…だから「わかる」「できる」 個別カリキュラム作成で「わかる」 多くの学習機会で「できる」までサポート" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@700;900&display=swap" rel="stylesheet" />
@@ -14,50 +14,71 @@ const base = import.meta.env.BASE_URL;
 <body>
 
 <header class="header">
-  <span class="header__logo">明塾</span>
+  <span class="header__logo">明塾 <small>Meijuku</small></span>
   <nav class="header__nav">
     <a href="#reason">選ばれる理由</a>
-    <a href="#course">料金</a>
+    <a href="#course">コース</a>
     <a href="#contact">お問い合わせ</a>
   </nav>
   <a href="tel:0765-22-0777" class="header__tel">☎ 0765-22-0777</a>
 </header>
 
-<!-- HERO -->
+<!-- HERO: 元サイトと同構造（左オーバーレイ＋右写真） -->
 <section class="hero">
-  <img src={`${base}/images/hero-bg.png`} alt="" class="hero__bg" />
-  <div class="hero__tint"></div>
-  <div class="hero__content">
-    <p class="hero__label">富山県魚津市の個別指導塾</p>
-    <h1 class="hero__heading"><span class="hero__num">22</span>期生、<br />全員合格。</h1>
-    <p class="hero__sub">少人数制・個別指導だから、「わかる」が「できる」に変わる。</p>
-    <a href="#contact" class="hero__cta">無料体験学習に申し込む</a>
+  <div class="hero__photo">
+    <img src={`${base}/images/hero-bg.png`} alt="" />
+  </div>
+  <div class="hero__overlay">
+    <h1 class="hero__title">明塾 <span>Meijuku</span></h1>
+    <p class="hero__text">富山県魚津市の学習塾</p>
+    <p class="hero__text">少人数制・個別指導…</p>
+    <p class="hero__text">だから「わかる」「できる」</p>
+    <p class="hero__text">個別カリキュラム作成で「わかる」</p>
+    <p class="hero__text">多くの学習機会で「できる」までサポート</p>
   </div>
 </section>
 
-<!-- PAIN -->
-<section class="pain">
+<!-- ANNOUNCE -->
+<section class="announce">
   <div class="inner">
-    <h2 class="pain__heading">塾に通わせているのに、<br />成績が上がらない。</h2>
-    <p class="pain__item">大人数の授業で、質問できないまま進む。</p>
-    <p class="pain__item">先生が毎回変わって、子どもが戸惑う。</p>
-    <p class="pain__item">受験が近いのに、何をすればいいかわからない。</p>
-    <p class="pain__bridge">明塾は、22年間この悩みに向き合い続けてきました。</p>
+    <div class="announce__grid">
+      <div class="announce__main">
+        <h2 class="announce__heading">少人数制・個別指導…<br />だから「わかる」「できる」</h2>
+        <p class="announce__highlight">新入塾生受付中</p>
+        <p class="announce__highlight">入塾金無料・無料体験学習</p>
+        <p class="announce__result">22期生　みんながんばりました。</p>
+        <p class="announce__big">高校入試全員合格</p>
+      </div>
+      <div class="announce__mascot">
+        <img src={`${base}/images/mascot.png`} alt="明塾マスコット" />
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- TRANSITION -->
+<!-- PHILOSOPHY -->
+<section class="philosophy">
+  <div class="inner">
+    <h2 class="philosophy__heading">ひとりひとりを大切に。</h2>
+    <p class="philosophy__text">「目くばり」「気くばり」をモットーに、勉強を通じて「分かる楽しさ」や「知る喜び」そして「忍耐」を知り、それを逆境を乗り切るための「自信」としてもらいたい。</p>
+    <p class="philosophy__text">自ら責任指導・継続指導。お子さまの成長を、入塾から卒業まで同じ先生が見届けます。</p>
+  </div>
+</section>
+
 <div class="wedge"></div>
 
 <!-- REASON -->
 <section class="reason" id="reason">
-  <div class="inner"><p class="en">Reason</p><h2 class="sec-h">明塾が選ばれる理由</h2></div>
+  <div class="inner">
+    <p class="en">Reason</p>
+    <h2 class="sec-h">明塾が選ばれる理由</h2>
+  </div>
   <div class="reason__block">
     <div class="reason__img"><img src={`${base}/images/classroom-interior.png`} alt="少人数の教室" loading="lazy" /></div>
     <div class="reason__body inner">
       <span class="reason__num">01</span>
       <h3 class="reason__title">1クラス、最大6人。</h3>
-      <p>大人数の教室では埋もれてしまう「わからない」も、2〜6人なら見逃しません。ひとりひとりの理解度に合わせて、授業の速度も内容も変えます。</p>
+      <p>少人数制だから、ひとりひとりの理解度に合わせて授業の速度も内容も変えます。大人数では埋もれる「わからない」を見逃しません。</p>
     </div>
   </div>
   <div class="reason__block reason__block--flip">
@@ -65,7 +86,7 @@ const base = import.meta.env.BASE_URL;
     <div class="reason__body inner">
       <span class="reason__num">02</span>
       <h3 class="reason__title">塾長が、ずっと見る。</h3>
-      <p>学生バイトに任せません。入塾から卒業まで同じ先生が指導するから、お子さまの小さな変化も見逃さない。</p>
+      <p>学生バイトに任せません。入塾から卒業まで同じ先生が継続指導するから、お子さまの小さな変化も見逃さない。</p>
     </div>
   </div>
   <div class="reason__block">
@@ -73,7 +94,7 @@ const base = import.meta.env.BASE_URL;
     <div class="reason__body inner">
       <span class="reason__num">03</span>
       <h3 class="reason__title">追加費用、ゼロ。</h3>
-      <p>テスト前の補習も、自主勉の時間も、季節の特別対策も。必要な学習はすべて月額の中。</p>
+      <p>テスト前の補習も、自主勉の時間も、季節の特別対策も。多くの学習機会で「できる」までサポート。すべて月額の中です。</p>
     </div>
   </div>
 </section>
@@ -81,8 +102,10 @@ const base = import.meta.env.BASE_URL;
 <!-- RESULTS -->
 <section class="results">
   <div class="inner">
-    <p class="en en--light">Results</p>
-    <div class="results__main"><span class="results__number">22</span><span class="results__unit">期生</span></div>
+    <div class="results__main">
+      <span class="results__number">22</span>
+      <span class="results__unit">期生</span>
+    </div>
     <h2 class="results__statement">高校入試、全員合格。</h2>
     <p class="results__note">富山東・魚津・新川をはじめ、県内外の志望校へ。</p>
   </div>
@@ -132,13 +155,14 @@ const base = import.meta.env.BASE_URL;
     <h2 class="sec-h">よくある質問</h2>
     <div class="faq__item"><p class="faq__q">途中から入塾してもついていけますか？</p><p class="faq__a">個別カリキュラムなので、お子さまの学力に合わせて始められます。月途中は日割り計算です。</p></div>
     <div class="faq__item"><p class="faq__q">部活と両立できますか？</p><p class="faq__a">学校帰りの直接来塾に対応。回数・時間の変更も柔軟にできます。</p></div>
-    <div class="faq__item"><p class="faq__q">5教科すべて教えてもらえますか？</p><p class="faq__a">英語・数学・理科・社会・国語の全5教科に対応。苦手は重点的に、得意は先取りで進めます。</p></div>
+    <div class="faq__item"><p class="faq__q">5教科すべて教えてもらえますか？</p><p class="faq__a">英語・数学・理科・社会・国語の全5教科に対応。苦手は重点的に、得意は先取りで。</p></div>
   </div>
 </section>
 
 <!-- CTA -->
 <footer class="cta" id="contact">
   <div class="inner">
+    <img src={`${base}/images/mascot.png`} alt="" class="cta__mascot" />
     <h2 class="cta__heading">まずは、無料体験から。</h2>
     <p class="cta__sub">お子さまの「わかる」が始まる場所を、一度のぞいてみてください。</p>
     <div class="cta__actions">
@@ -157,138 +181,148 @@ const base = import.meta.env.BASE_URL;
 
 <style>
 :root {
-  --primary: #529a88;
-  --primary-dark: #3d7a6a;
+  --azuki: #745a6a;
+  --azuki-dark: #6e5364;
   --bg: #e5e3db;
-  --bg-light: #f0ede7;
+  --bg-light: #edebe5;
   --white: #fff;
-  --text: #333;
-  --text-soft: #666;
-  --text-muted: #999;
-  --rule: rgba(0,0,0,0.07);
+  --text: #3a3a3a;
+  --text-soft: #5a5a5a;
+  --text-muted: #8a8a8a;
+  --rule: rgba(0,0,0,0.08);
   --serif: 'Noto Serif JP', serif;
   --sans: 'Noto Sans JP', sans-serif;
 }
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { font-family: var(--sans); color: var(--text); line-height: 1.9; letter-spacing: 0.04em; overflow-x: hidden; background: var(--white); padding-bottom: 70px; }
+body { font-family: var(--sans); color: var(--text); line-height: 1.9; letter-spacing: 0.04em; overflow-x: hidden; background: var(--bg); padding-bottom: 70px; }
 img { max-width: 100%; height: auto; display: block; }
 a { color: inherit; text-decoration: none; }
-.inner { max-width: 920px; margin: 0 auto; padding-left: 1.5rem; padding-right: 1.5rem; }
-.en { font-family: var(--serif); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--primary); margin-bottom: 0.4rem; }
-.en--light { color: rgba(255,255,255,0.4); }
-.sec-h { font-family: var(--serif); font-size: clamp(1.4rem, 3.5vw, 1.8rem); font-weight: 700; color: var(--text); margin-bottom: 2rem; }
+.inner { max-width: 880px; margin: 0 auto; padding-left: 1.5rem; padding-right: 1.5rem; }
+.en { font-family: var(--serif); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--azuki); margin-bottom: 0.3rem; opacity: 0.6; }
+.sec-h { font-family: var(--serif); font-size: clamp(1.3rem, 3.5vw, 1.7rem); font-weight: 700; color: var(--text); margin-bottom: 2rem; }
 
-/* HEADER (mobile-first) */
-.header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; padding: 0.6rem 1.5rem; background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); }
-.header__logo { font-family: var(--serif); font-size: 1.15rem; font-weight: 900; color: var(--text); }
+/* HEADER */
+.header { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; padding: 0.55rem 1.5rem; background: rgba(229,227,219,0.95); backdrop-filter: blur(10px); }
+.header__logo { font-family: var(--serif); font-size: 1.1rem; font-weight: 900; color: var(--text); }
+.header__logo small { font-weight: 500; font-size: 0.65em; color: var(--text-muted); margin-left: 0.2em; }
 .header__nav { display: none; }
-.header__tel { font-family: var(--serif); font-size: 0.8rem; font-weight: 700; color: var(--primary-dark); }
-@media (min-width: 769px) { .header__nav { display: flex; gap: 2rem; } .header__nav a { font-size: 0.8rem; color: var(--text-soft); } }
+.header__tel { font-family: var(--serif); font-size: 0.8rem; font-weight: 700; color: var(--azuki); }
+@media (min-width: 769px) { .header__nav { display: flex; gap: 1.8rem; } .header__nav a { font-size: 0.78rem; color: var(--text-soft); } }
 
-/* HERO */
-.hero { position: relative; min-height: 100svh; display: flex; align-items: center; overflow: hidden; }
-.hero__bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
-.hero__tint { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(229,227,219,0.5) 0%, rgba(229,227,219,0.25) 50%, rgba(229,227,219,0.1) 100%); }
-.hero__content { position: relative; z-index: 2; padding: calc(3rem + 48px) 1.5rem 3rem; }
-.hero__label { font-size: 0.8rem; font-weight: 700; color: var(--primary-dark); letter-spacing: 0.12em; margin-bottom: 1rem; }
-.hero__heading { font-family: var(--serif); font-size: clamp(2.8rem, 10vw, 5.5rem); font-weight: 900; line-height: 1.15; color: var(--text); margin-bottom: 1.2rem; text-shadow: 0 2px 20px rgba(229,227,219,0.7); }
-.hero__num { font-size: 1.3em; color: var(--primary); }
-.hero__sub { font-size: clamp(0.9rem, 2vw, 1.05rem); line-height: 1.8; color: var(--text-soft); margin-bottom: 2rem; text-shadow: 0 1px 10px rgba(229,227,219,0.8); }
-.hero__cta { display: inline-block; padding: 0.85rem 2rem; background: var(--primary); color: var(--white); font-weight: 700; font-size: 0.9rem; transition: background 0.3s; }
-.hero__cta:hover { background: var(--primary-dark); }
+/* HERO: 元サイトの左overlay＋右写真構造を再現 */
+.hero { display: grid; grid-template-columns: 1fr; min-height: 60vh; margin-top: 44px; }
+.hero__photo { position: relative; overflow: hidden; height: 280px; }
+.hero__photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; }
+.hero__overlay { background: var(--azuki); color: var(--white); padding: 2rem 1.5rem; display: flex; flex-direction: column; justify-content: center; }
+.hero__title { font-family: var(--serif); font-size: 1.8rem; font-weight: 900; margin-bottom: 1.2rem; line-height: 1.3; }
+.hero__title span { font-size: 0.5em; font-weight: 500; display: block; opacity: 0.7; margin-top: 0.3rem; }
+.hero__text { font-size: 0.85rem; line-height: 1.7; opacity: 0.85; }
+
 @media (min-width: 769px) {
-  .hero { align-items: flex-end; }
-  .hero__tint { background: linear-gradient(to right, rgba(229,227,219,0.5) 0%, rgba(229,227,219,0.2) 40%, transparent 65%); }
-  .hero__content { padding: 0 0 clamp(3rem, 8vh, 6rem) clamp(2rem, 5vw, 6rem); max-width: 650px; }
+  .hero { grid-template-columns: 38% 62%; min-height: 520px; }
+  .hero__photo { height: auto; order: 2; }
+  .hero__overlay { order: 1; padding: 3rem 2.5rem; }
+  .hero__title { font-size: 2.4rem; }
+  .hero__text { font-size: 0.9rem; }
 }
 
-/* PAIN */
-.pain { padding: clamp(3.5rem, 8vw, 6rem) 0; background: var(--bg); text-align: center; }
-.pain__heading { font-family: var(--serif); font-size: clamp(1.3rem, 3.5vw, 1.8rem); font-weight: 700; color: var(--text); line-height: 1.6; margin-bottom: 2rem; }
-.pain__item { font-size: 0.95rem; color: var(--text-soft); padding: 0.7rem 0; max-width: 440px; margin: 0 auto; }
-.pain__bridge { font-family: var(--serif); font-size: clamp(1rem, 2.5vw, 1.2rem); font-weight: 700; color: var(--primary); margin-top: 2rem; }
+/* ANNOUNCE */
+.announce { padding: clamp(2.5rem, 6vw, 4rem) 0; background: var(--bg); }
+.announce__grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; align-items: center; }
+.announce__heading { font-family: var(--serif); font-size: clamp(1.2rem, 3vw, 1.6rem); font-weight: 700; color: var(--text); line-height: 1.6; margin-bottom: 1.5rem; }
+.announce__highlight { font-family: var(--serif); font-size: 1.1rem; font-weight: 700; color: var(--azuki); margin-bottom: 0.3rem; }
+.announce__result { margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-soft); }
+.announce__big { font-family: var(--serif); font-size: clamp(1.4rem, 4vw, 1.8rem); font-weight: 900; color: var(--text); }
+.announce__mascot { max-width: 180px; margin: 0 auto; }
+@media (min-width: 769px) { .announce__grid { grid-template-columns: 1fr auto; } .announce__mascot { max-width: 220px; } }
+
+/* PHILOSOPHY */
+.philosophy { padding: clamp(2.5rem, 6vw, 4rem) 0; background: var(--white); text-align: center; }
+.philosophy__heading { font-family: var(--serif); font-size: clamp(1.3rem, 3.5vw, 1.8rem); font-weight: 700; color: var(--azuki); margin-bottom: 1.5rem; }
+.philosophy__text { max-width: 600px; margin: 0 auto 1rem; font-size: 0.9rem; color: var(--text-soft); line-height: 2; }
 
 /* WEDGE */
-.wedge { height: 50px; background: var(--white); clip-path: polygon(0 0, 100% 0, 50% 100%); margin-top: -1px; }
+.wedge { height: 40px; background: var(--bg); clip-path: polygon(0 0, 100% 0, 50% 100%); }
 
 /* REASON */
-.reason { padding: clamp(2rem, 5vw, 4rem) 0 0; }
-.reason__block { display: grid; grid-template-columns: 1fr; margin-bottom: 1px; }
-.reason__img { overflow: hidden; height: 240px; }
+.reason { padding: clamp(2rem, 5vw, 3.5rem) 0 0; background: var(--bg); }
+.reason__block { display: grid; grid-template-columns: 1fr; margin-bottom: 2px; background: var(--white); }
+.reason__img { overflow: hidden; height: 220px; }
 .reason__img img { width: 100%; height: 100%; object-fit: cover; }
-.reason__body { padding: 2rem 1.5rem; }
-.reason__num { font-family: var(--serif); font-size: 3.5rem; font-weight: 900; color: var(--primary); opacity: 0.15; line-height: 1; }
-.reason__title { font-family: var(--serif); font-size: clamp(1.2rem, 2.8vw, 1.5rem); font-weight: 700; color: var(--text); margin: 0.3rem 0 0.8rem; line-height: 1.4; }
-.reason__body p { font-size: 0.9rem; color: var(--text-soft); line-height: 1.9; }
+.reason__body { padding: 1.8rem 1.5rem; }
+.reason__num { font-family: var(--serif); font-size: 3rem; font-weight: 900; color: var(--azuki); opacity: 0.12; line-height: 1; }
+.reason__title { font-family: var(--serif); font-size: clamp(1.1rem, 2.5vw, 1.4rem); font-weight: 700; color: var(--text); margin: 0.3rem 0 0.7rem; line-height: 1.4; }
+.reason__body p { font-size: 0.88rem; color: var(--text-soft); line-height: 1.9; }
 @media (min-width: 769px) {
-  .reason__block { grid-template-columns: 1fr 1fr; min-height: 380px; }
+  .reason__block { grid-template-columns: 1fr 1fr; min-height: 340px; }
   .reason__block--flip .reason__img { order: 2; }
   .reason__block--flip .reason__body { order: 1; }
   .reason__img { height: auto; }
-  .reason__body { padding: 3rem 2.5rem; display: flex; flex-direction: column; justify-content: center; }
+  .reason__body { padding: 2.5rem; display: flex; flex-direction: column; justify-content: center; }
 }
 
 /* RESULTS */
-.results { padding: clamp(4rem, 10vw, 7rem) 0; background: var(--primary-dark); color: var(--white); text-align: center; }
+.results { padding: clamp(3.5rem, 8vw, 6rem) 0; background: var(--azuki); color: var(--white); text-align: center; }
 .results__main { display: flex; align-items: baseline; justify-content: center; gap: 0.2rem; margin-bottom: 0.3rem; }
-.results__number { font-family: var(--serif); font-size: clamp(5rem, 18vw, 11rem); font-weight: 900; line-height: 1; color: var(--bg); }
-.results__unit { font-family: var(--serif); font-size: clamp(1.3rem, 3.5vw, 2rem); font-weight: 700; }
-.results__statement { font-family: var(--serif); font-size: clamp(1.2rem, 3vw, 1.7rem); font-weight: 700; margin-bottom: 0.8rem; }
-.results__note { font-size: 0.85rem; opacity: 0.5; }
+.results__number { font-family: var(--serif); font-size: clamp(5rem, 16vw, 10rem); font-weight: 900; line-height: 1; color: var(--bg); }
+.results__unit { font-family: var(--serif); font-size: clamp(1.2rem, 3vw, 1.8rem); font-weight: 700; }
+.results__statement { font-family: var(--serif); font-size: clamp(1.1rem, 3vw, 1.5rem); font-weight: 700; margin-bottom: 0.8rem; }
+.results__note { font-size: 0.82rem; opacity: 0.5; }
 
 /* COURSE */
-.course { background: var(--bg-light); }
+.course { background: var(--white); }
 .course__layout { display: grid; grid-template-columns: 1fr; }
-.course__photo { position: relative; overflow: hidden; height: 200px; }
+.course__photo { position: relative; overflow: hidden; height: 180px; }
 .course__photo img { width: 100%; height: 100%; object-fit: cover; }
-.course__badge { position: absolute; bottom: 1rem; left: 1rem; z-index: 2; font-family: var(--serif); font-size: 1rem; color: var(--white); background: var(--primary-dark); padding: 0.6rem 1rem; line-height: 1.3; }
-.course__badge strong { font-size: 2rem; display: block; }
+.course__badge { position: absolute; bottom: 1rem; left: 1rem; z-index: 2; font-family: var(--serif); font-size: 0.9rem; color: var(--white); background: var(--azuki); padding: 0.5rem 0.8rem; line-height: 1.3; }
+.course__badge strong { font-size: 1.8rem; display: block; }
 .course__data { padding: clamp(1.5rem, 4vw, 2.5rem) 1.5rem; }
-.course__label { font-family: var(--serif); font-size: 0.95rem; font-weight: 700; color: var(--text); margin: 1.2rem 0 0.2rem; }
+.course__label { font-family: var(--serif); font-size: 0.9rem; font-weight: 700; color: var(--text); margin: 1rem 0 0.2rem; }
 .course__label:first-of-type { margin-top: 0; }
-.course__row { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; padding: 0.5rem 0; border-bottom: 1px solid var(--rule); }
-.course__row strong { font-family: var(--serif); font-size: 1.1rem; color: var(--text); }
-.course__row small { font-size: 0.65em; color: var(--text-muted); font-weight: 400; }
-.course__note { margin-top: 1.2rem; font-size: 0.8rem; color: var(--text-muted); }
+.course__row { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; padding: 0.4rem 0; border-bottom: 1px solid var(--rule); font-size: 0.9rem; }
+.course__row strong { font-family: var(--serif); font-size: 1.05rem; color: var(--text); }
+.course__row small { font-size: 0.6em; color: var(--text-muted); font-weight: 400; }
+.course__note { margin-top: 1rem; font-size: 0.78rem; color: var(--text-muted); }
 @media (min-width: 769px) {
   .course__layout { grid-template-columns: 2fr 3fr; }
-  .course__photo { height: auto; min-height: 460px; }
+  .course__photo { height: auto; min-height: 420px; }
   .course__data { padding: 2.5rem; }
 }
 
 /* TEACHER */
-.teacher { padding: clamp(3.5rem, 8vw, 6rem) 0; background: var(--white); }
-.teacher__name { font-family: var(--serif); font-size: 1.6rem; font-weight: 900; color: var(--text); margin-top: 0.4rem; }
-.teacher__role { font-size: 0.8rem; font-weight: 400; color: var(--text-muted); margin-left: 1rem; }
-.teacher__quote { font-family: var(--serif); font-size: 0.95rem; line-height: 2.1; color: var(--text); padding: 1.2rem 0; margin: 1.2rem 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); font-style: normal; border-left: none; }
+.teacher { padding: clamp(3rem, 7vw, 5rem) 0; background: var(--bg); }
+.teacher__name { font-family: var(--serif); font-size: 1.5rem; font-weight: 900; color: var(--text); margin-top: 0.3rem; }
+.teacher__role { font-size: 0.75rem; font-weight: 400; color: var(--text-muted); margin-left: 0.8rem; }
+.teacher__quote { font-family: var(--serif); font-size: 0.92rem; line-height: 2.1; color: var(--text); padding: 1.2rem 0; margin: 1rem 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); font-style: normal; border-left: none; }
 .teacher__bio { font-size: 0.85rem; color: var(--text-soft); line-height: 1.9; }
 
 /* FAQ */
-.faq { padding: clamp(3.5rem, 8vw, 6rem) 0; background: var(--bg-light); }
-.faq__item { padding: 1.2rem 0; border-bottom: 1px solid var(--rule); }
-.faq__q { font-family: var(--serif); font-size: 0.95rem; font-weight: 700; color: var(--text); margin-bottom: 0.4rem; }
-.faq__q::before { content: 'Q. '; color: var(--primary); }
-.faq__a { font-size: 0.9rem; color: var(--text-soft); padding-left: 1.6rem; position: relative; }
+.faq { padding: clamp(3rem, 7vw, 5rem) 0; background: var(--white); }
+.faq__item { padding: 1.1rem 0; border-bottom: 1px solid var(--rule); }
+.faq__q { font-family: var(--serif); font-size: 0.92rem; font-weight: 700; color: var(--text); margin-bottom: 0.3rem; }
+.faq__q::before { content: 'Q. '; color: var(--azuki); }
+.faq__a { font-size: 0.88rem; color: var(--text-soft); padding-left: 1.5rem; position: relative; }
 .faq__a::before { content: 'A.'; position: absolute; left: 0; font-weight: 700; color: var(--text); }
 
 /* CTA */
-.cta { padding: clamp(3.5rem, 8vw, 6rem) 0 2.5rem; background: var(--primary-dark); color: var(--white); text-align: center; font-style: normal; }
-.cta__heading { font-family: var(--serif); font-size: clamp(1.3rem, 3.5vw, 1.8rem); font-weight: 700; margin-bottom: 0.6rem; }
-.cta__sub { font-size: 0.9rem; opacity: 0.7; margin-bottom: 2rem; }
-.cta__actions { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-bottom: 2.5rem; }
-.cta__tel { display: flex; flex-direction: column; align-items: center; padding: 0.8rem 1.8rem; background: rgba(255,255,255,0.08); transition: background 0.3s; }
-.cta__tel:hover { background: rgba(255,255,255,0.15); }
-.cta__tel-num { font-family: var(--serif); font-size: 1.3rem; font-weight: 700; }
-.cta__tel-note { font-size: 0.7rem; opacity: 0.6; }
-.cta__mail { display: inline-block; padding: 0.8rem 2rem; background: var(--bg); color: var(--text); font-weight: 700; font-size: 0.9rem; transition: background 0.3s; }
+.cta { padding: clamp(3rem, 7vw, 5rem) 0 2rem; background: var(--azuki); color: var(--white); text-align: center; font-style: normal; }
+.cta__mascot { width: 100px; margin: 0 auto 1.5rem; }
+.cta__heading { font-family: var(--serif); font-size: clamp(1.2rem, 3.5vw, 1.6rem); font-weight: 700; margin-bottom: 0.5rem; }
+.cta__sub { font-size: 0.88rem; opacity: 0.7; margin-bottom: 2rem; }
+.cta__actions { display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: center; margin-bottom: 2rem; }
+.cta__tel { display: flex; flex-direction: column; align-items: center; padding: 0.7rem 1.5rem; background: rgba(255,255,255,0.1); transition: background 0.3s; }
+.cta__tel:hover { background: rgba(255,255,255,0.18); }
+.cta__tel-num { font-family: var(--serif); font-size: 1.2rem; font-weight: 700; }
+.cta__tel-note { font-size: 0.68rem; opacity: 0.6; }
+.cta__mail { display: inline-block; padding: 0.7rem 1.8rem; background: var(--bg); color: var(--text); font-weight: 700; font-size: 0.85rem; transition: background 0.3s; }
 .cta__mail:hover { background: var(--bg-light); }
-.cta__addr { font-size: 0.75rem; opacity: 0.5; font-style: normal; margin-bottom: 0.3rem; }
-.cta__copy { font-size: 0.7rem; opacity: 0.25; }
+.cta__addr { font-size: 0.72rem; opacity: 0.45; font-style: normal; margin-bottom: 0.3rem; }
+.cta__copy { font-size: 0.65rem; opacity: 0.2; }
 
 /* STICKY */
-.sticky { position: fixed; bottom: 0; left: 0; right: 0; z-index: 90; padding: 0.5rem 1rem; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); border-top: 1px solid var(--rule); }
-.sticky__btn { display: block; text-align: center; padding: 0.8rem; background: var(--primary); color: var(--white); font-weight: 700; font-size: 0.85rem; }
+.sticky { position: fixed; bottom: 0; left: 0; right: 0; z-index: 90; padding: 0.5rem 1rem; background: rgba(229,227,219,0.95); backdrop-filter: blur(10px); border-top: 1px solid var(--rule); }
+.sticky__btn { display: block; text-align: center; padding: 0.75rem; background: var(--azuki); color: var(--white); font-weight: 700; font-size: 0.85rem; }
 @media (min-width: 769px) { .sticky { display: none; } }
 </style>
